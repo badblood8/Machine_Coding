@@ -8,7 +8,7 @@ class BillService(BillServiceInterface):
         bill.setId(id)
         bill.setGroupId(groupId)
         bill.setAmount(amount)
-        bill.setContibution(contribution)
+        bill.setContribution(contribution)
         bill.setPaidBy(paidBy)
         self.__class__.billDetails[id] = bill
 

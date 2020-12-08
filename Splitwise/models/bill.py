@@ -30,7 +30,7 @@ class Bill(object):
         self.contribution = contribution
     
     def getContribution(self):
-        return self.Contribution
+        return self.contribution
 
     def setPaidBy(self,paidBy):
         self.paidBy = paidBy

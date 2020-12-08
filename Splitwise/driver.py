@@ -25,10 +25,10 @@ group1 = groupController.addGroup('group1','Mahanthi',members)
 
 paidBy = {'user1': 100 , 'user2': 200, 'user3': 300, 'user4': 400,'user1': 500}
 
-conrtibutions = {'user1': 500 , 'user2': 400, 'user3': 200, 'user4': 300,'user1': 100}
+contribution = {'user1': 500 , 'user2': 400, 'user3': 200, 'user4': 300,'user1': 100}
 
-bill1 = billController('bill1','group1',1500,contribution,paidBy)
+bill1 = billController.addBill('bill1','group1',1500,contribution,paidBy)
 
 balance1 = billController.getBalance('user1')
-
-print(balance1)
+balance2 = billController.getBalance('user2')
+print(balance1,balance2)

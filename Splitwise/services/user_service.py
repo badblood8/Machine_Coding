@@ -3,7 +3,7 @@ from Splitwise.models.user import User
 
 class UserService(UserServiceInterface):
     userDetails = {}
-    def addBill(self,id,name):
+    def addUser(self,id,name):
         user=User()
         user.setId(id)
         user.setName(name)

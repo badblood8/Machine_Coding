@@ -12,6 +12,6 @@ class BillController(object):
             if userId in bill.getContribution():
                 balance = balance - bill.getContribution().get(userId)
             if userId in bill.getPaidBy():
-                balance = balance - bill.getPaidBy().get(userId)
+                balance = balance + bill.getPaidBy().get(userId)
         
         return balance

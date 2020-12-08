@@ -3,7 +3,7 @@ from Splitwise.models.group import Group
 
 class GroupService(GroupServiceInterface):
     groupDetails = {}
-    def addBill(self,id,name,members):
+    def addGroup(self,id,name,members):
         group=Group()
         group.setId(id)
         group.setName(name)
